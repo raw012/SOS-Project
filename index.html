@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency SOS - Medical Assistance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="icon">❤️</div>
+    <h1>Heart Attack SOS</h1>
+  </header>
+    <!-- GLOBAL TIMER BAR -->
+  <div class="global-timer">
+  <span class="timer-value" id="timer">0:00</span>
+  </div>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="container">
+
+    <!-- ===== CPR INSTRUCTIONS ===== -->
+    <section class="card cpr-card">
+
+
+      <h2 class="section-title">
+        <span class="section-icon heart">❤️</span>
+        CPR Instructions
+        </h2>
+
+      <!-- CPR VIDEO -->
+      <div class="video-container">
+      <iframe
+        id="cpr-video"
+        src="https://www.youtube.com/embed/-NodDRTsV88?autoplay=1&controls=0&rel=0&modestbranding=1&enablejsapi=1"
+        title="CPR Instruction Video"
+        allow="autoplay"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        </div>
+
+
+      <!-- CPR RATIO -->
+      <div class="ratio">
+        <span class="ratio-number">30 : 2</span>
+        <p>Chest Compressions : Rescue Breaths</p>
+      </div>
+
+      <!-- CPR STEPS -->
+      <ol class="steps">
+        <li>
+          <strong>Hands on chest center</strong>
+          <p>Heel of hand on breastbone between nipples.</p>
+        </li>
+        <li>
+          <strong>30 compressions</strong>
+          <p>2 inches deep, 100–120/min.</p>
+        </li>
+        <li>
+          <strong>2 rescue breaths</strong>
+          <p>Tilt head, pinch nose, seal mouth.</p>
+        </li>
+        <li>
+          <strong>Repeat continuously</strong>
+          <p>Until AED or help arrives.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== AED LOCATION ===== -->
+    <section class="card aed-card">
+      <h2 class="section-title">
+        <span class="section-icon location">📍</span>
+         AED Location Reference
+        </h2>
+
+      <div id="map" class="map-container"></div>
+
+
+      <ul class="aed-list">
+        <li>
+          <strong>Canyonview Sports Facility</strong>
+          <span>~2 min</span>
+        </li>
+        <li>
+          <strong>Computer Science & Engineering</strong>
+          <span>~3 min</span>
+        </li>
+        <li>
+          <strong>Atkinson Hall</strong>
+          <span>~6 min</span>
+        </li>
+      </ul>
+
+      <button class="primary-btn">Start Navigation</button>
+    </section>
+
+  </main>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJNK3EkUEG4GVrut4hmXZKz11TfhTSkAw&callback=initMap"
+  async
+  defer>
+</script>
+</body>
+</html>

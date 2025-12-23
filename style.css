@@ -1,0 +1,194 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #333;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1.4rem;
+  background: transparent;
+  border-bottom: none;
+}
+
+.header .icon {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ===== Global Timer ===== */
+.global-timer {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem auto 1rem;
+}
+
+.timer-value {
+  color: #d32f2f;          /* medical red */
+  font-size: 1.35rem;     /* emphasis, but < title */
+  font-weight: 700;
+  background: #f2f4f8;
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+}
+
+/* ===== Main Two-Panel Layout ===== */
+.container {
+  display: grid;
+  grid-template-columns: minmax(420px, 520px) minmax(420px, 520px);
+  gap: 1.8rem;
+  justify-content: center;   /* 🔑 centers the blocks */
+  padding: 1.2rem 2rem;
+  align-items: stretch;
+}
+/* ===== Card Base ===== */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* ===== Section Titles ===== */
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* ===== CPR Video ===== */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 280px;          /* controlled & stable */
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 1rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===== CPR Ratio ===== */
+.ratio {
+  text-align: center;
+  margin: 0.8rem 0 1rem;
+}
+
+.ratio-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e53935;
+}
+
+/* ===== CPR Steps ===== */
+.steps {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.steps li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+/* ===== AED Map ===== */
+.map-placeholder {
+  background: #e9eef5;
+  height: 280px;          /* matches video height */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ===== AED List ===== */
+.aed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aed-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== Navigation Button ===== */
+.primary-btn {
+  margin-top: auto;       /* pushes button to bottom */
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background: #3b5bfd;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Section Title with Icon ===== */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.section-icon.heart {
+  background: #fdecea;
+  color: #e53935;
+}
+
+.section-icon.location {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.aed-list span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+}
