@@ -1,10 +1,13 @@
+<p align="center">
+  <img width="600" alt="Web Demo" src="https://github.com/user-attachments/assets/2f375b1a-161e-4e7d-9193-0969a1955ac7" />
+</p>
+
 # SOS Project
 This project aims to improve the efficiencies in saving the lives of heart attack patients 
 by instructing bystander helpers in implementing the CPR(Cardiopulmonary Resuscitation) by
 CPR instruction videos. In addition, since AED(Automated External Defibrillator）machines
 are more powerful than CPR, it is helpful for the another helper to get the AED machines 
 using the AED maps.
-
 
 Key Functions:
 1. CPR video
