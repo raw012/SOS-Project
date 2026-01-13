@@ -72,31 +72,24 @@
 
     <!-- ===== AED LOCATION ===== -->
     <section class="card aed-card">
-      <h2 class="section-title">
-        <span class="section-icon location">📍</span>
-         AED Location Reference
-        </h2>
+      <h2><span class="badge badge-pin">📍</span> AED Location Reference</h2>
 
-      <div id="map" class="map-container"></div>
+      <!-- Map -->
+      <div class="map-wrap">
+      <div id="map" class="map"></div>
+      </div>
 
+      <!-- Section title + cards -->
+      <div class="aed-subtitle">
+        <span class="dot"></span>
+        <span>Known AED Locations (Nearest 3)</span>
+      </div>
 
-      <ul class="aed-list">
-        <li>
-          <strong>Canyonview Sports Facility</strong>
-          <span>~2 min</span>
-        </li>
-        <li>
-          <strong>Computer Science & Engineering</strong>
-          <span>~3 min</span>
-        </li>
-        <li>
-          <strong>Atkinson Hall</strong>
-          <span>~6 min</span>
-        </li>
-      </ul>
+      <div id="aed-cards" class="aed-cards"></div>
 
-      <button class="primary-btn">Start Navigation</button>
+      <button class="primary-btn" id="start-nav-btn">Start Navigation</button>
     </section>
+
 
   </main>
 
